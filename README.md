@@ -11,5 +11,6 @@ Board setup and impedance calculations are done. Differential pairs routing near
 # Todo list
  - [x] Set up PCB stackup consistent with JLCPCB 4-layer impedance-controlled options
  - [ ] Route differential pairs
+ - [ ] Place ground vias / stitching
  - [ ] Add 12V 2x6 power management, routed into SXM directly
  - [ ] Place needed screw holes for heat sink and fan
