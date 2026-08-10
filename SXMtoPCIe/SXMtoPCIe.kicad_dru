@@ -1,4 +1,4 @@
 (version 1)
 (rule "Diff_Pair_Clearance"
-	(constraint clearance (min 0.4mm))
+	(constraint clearance (min 0.38mm))
 	(condition "A.inDiffPair('*') && B.inDiffPair('*') && !AB.isCoupledDiffPair()"))
