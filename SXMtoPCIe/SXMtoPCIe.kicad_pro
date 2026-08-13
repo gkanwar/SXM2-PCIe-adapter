@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.8542,
+          "height": 3.0,
+          "width": 3.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,11 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 1,
+          "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -602,7 +602,7 @@
         "track_width": 0.25,
         "tuning_profile": "",
         "via_diameter": 0.45,
-        "via_drill": 0.2
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -610,6 +610,7 @@
     },
     "net_colors": {
       "+12V": "rgb(194, 0, 194)",
+      "+12VPCI": "rgb(194, 0, 194)",
       "GND": "rgb(255, 255, 194)",
       "K18": "rgb(255, 153, 0)",
       "K19": "rgb(255, 153, 0)",
@@ -649,6 +650,18 @@
       {
         "netclass": "Power_12V",
         "pattern": "GND"
+      },
+      {
+        "netclass": "Power_12V",
+        "pattern": "+12VPCI"
+      },
+      {
+        "netclass": "Power_12V",
+        "pattern": "GNDPCI"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GNDPCI"
       }
     ]
   },
@@ -780,7 +793,7 @@
         "uuid": "222c339b-acde-4bc9-9bd2-82d74da0ded9"
       }
     ],
-    "used_designators": "#PWR1,#PWR3,C33-37",
+    "used_designators": "J4-5",
     "variants": []
   },
   "sheets": [
